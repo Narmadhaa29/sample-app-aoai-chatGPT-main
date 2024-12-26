@@ -61,9 +61,9 @@ jobs:
 
       
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
           app-name: 'PrudentialChatGPTAssistant'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2E6D9115E88F4EF98E583ADDEFEB47D5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FFC78CAF428841B4BFDD2A12DAE49BEC }}
